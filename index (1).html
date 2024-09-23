@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dairy Farmers Registration</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 100px;
+			margin: 0;
+		}
+
+
+
+		.open-btn {
+			position: fixed;
+			bottom: 0%;
+
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			font-size: 16px;
+		}
+
+
+		.open-btn:hover {
+			background-color: #0056b3;
+		}
+
+		.popup {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			justify-content: center;
+			align-items: center;
+		}
+
+		.popup-content {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			max-width: 400px;
+			width: 100%;
+			position: relative;
+		}
+
+		.close-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #ff5c5c;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			padding: 5px 10px;
+		}
+
+		.close-btn:hover {
+			background-color: #ff1c1c;
+		}
+
+		.popup-content h1 {
+			margin-bottom: 50px;
+			font-size: 24px;
+			color: #333;
+		}
+
+		.form-group {
+			margin-bottom: 15px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 5px;
+			color: #333;
+		}
+
+		.form-group input,
+		.form-group select {
+			width: 90%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			align-items: center;
+		}
+
+		.form-group input[type="radio"] {
+			width: 50px;
+			margin-right: 10px;
+		}
+
+		.form-group .radio-group {
+			display: flex;
+			align-items: center;
+		}
+
+		.form-group .radio-group label {
+			margin-right: 20px;
+
+		}
+
+		.btn {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10apx;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		.btn:hover {
+			background-color: #0056b3;
+		}
+
+		.sign-in-link {
+			display: block;
+			margin-top: 10px;
+			text-align: center;
+		}
+
+		.sign-in-link a {
+			color: #007bff;
+			text-decoration: none;
+		}
+
+		.sign-in-link a:hover {
+			text-decoration: underline;
+		}
+		.p1 {
+  		font-family: "Times New Roman", Georgia, Garamond;
+		}
+		.animate__animated.animate__bounceInLeft {
+  		--animate-duration: 3s;
+		}
+		.animate__animated.animate__bounceInRight {
+			--animate-duration: 3s;
+		}
+		
+	</style>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+	<header>
+		<h1 class="animate__animated animate__bounceInLeft">Dairy Farmers Registration</h1>
+		<!-- <h1 class="p1"><font color="purple">Dairy Farmers Registration</font></h1> -->
+		<nav align="right" class="animate__animated animate__bounceInRight">
+			<a href="#about">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#contact">Contact Us</a>&nbsp;&nbsp;
+			<a href="sign_in.html">Sign In</a>&nbsp;&nbsp;
+		</nav>
+		
+	</header>
+
+	<main>
+		<section class="about">
+			<h1 style="background-color:rgba(9, 232, 16, 0.8); animation-delay: 1s;" class="animate__animated animate__bounceInDown">About Our Program</h1>
+			<span style='font-size:100px;'>&#128004;</span>
+			<p>Welcome to our Dairy Farmers Registration platform. We are dedicated to supporting dairy farmers by
+				providing a streamlined system for registering farms and managing livestock products. Our mission is to
+				empower dairy farmers by enhancing productivity, ensuring product quality, and facilitating market
+				access.</p>
+			<h3 style="background-color:rgba(9, 232, 16, 0.3); animation-delay: 2s;" class="animate__animated animate__fadeIn">Our Mission</h3>
+			<p>We aim to empower dairy farmers with the tools and resources they need to thrive. Our streamlined system
+				helps farmers register their farms efficiently, manage livestock products, and access markets with ease.
+				We believe in the importance of maintaining high standards of productivity and product quality to ensure
+				the success of our farmers.</p>
+			<h3 style="background-color:rgba(9, 232, 16, 0.3); animation-delay: 3s;" class="animate__animated animate__fadeIn">Features</h3>
+			<ul>
+				<li><b>Efficient Registration:</b> Our simplified registration process formalizes operations and helps
+					farmers access numerous benefits.</li>
+				<li><b>Product Management:</b> We offer tools for managing milk production and livestock inventory
+					efficiently, helping farmers stay organized and productive.</li>
+				<li><b>Quality Control:</b> Regular testing and certification ensure that products meet high standards
+					of quality and safety.</li>
+				<li><b>Financial Transparency:</b> Our transparent financial tools help farmers track payments and
+					incentives, ensuring they get fair compensation for their products.</li>
+			</ul>
+			<h3 style="background-color:rgba(9, 232, 16, 0.3); animation-delay: 4s;" class="animate__animated animate__fadeIn">Support</h3>
+			<ul>
+				<li><b>Education and Training:</b> We provide resources to help farmers improve their practices and stay
+					updated with industry trends.</li>
+				<li><b>Technical Assistance:</b> Our dedicated support team is always available to offer prompt
+					assistance with using our platform and addressing any issues that may arise.</li>
+			</ul>
+			<h3 style="background-color:rgba(9, 232, 16, 0.3); animation-delay: 5s;"  class="animate__animated animate__fadeIn">Sustainability</h3>
+			<p>We are committed to promoting sustainable farming practices and environmental stewardship. Our platform
+				encourages farmers to adopt eco-friendly methods that ensure long-term sustainability for the industry.
+			</p>
+			<h3 style="background-color:rgba(9, 232, 16, 0.3); animation-delay: 6s;" class="animate__animated animate__fadeIn">Join Us</h3>
+			<p>Join us in revolutionizing dairy farming by adopting our platform for sustainable growth and enhanced
+				efficiency. Together, we can build a future where dairy farming is more productive, profitable, and
+				sustainable.</p>
+		</section>
+		<section id="contact">
+			<h2 style="background-color:rgba(9, 232, 16, 0.8);" class="animate__animated animate__bounceInUp">Contact Us</h2>
+			<p>Have questions or need assistance? Contact us at <a
+					href="mailto:info@dairyfarmers.org">info@dairyfarmers.org</a> or call us at 555-555-5555.</p>
+		</section>
+	</main>
+	<button class="open-btn" onclick="openPopup()">Open Registration Form</button>
+	<div class="popup" id="popup">
+		<div class="popup-content">
+			<button class="close-btn" onclick="closePopup()">Close</button>
+			<h1>Online Registration</h1>
+			<p>Processing of dairy farmers producing milk and other livestock products</p>
+			<form>
+				<div class="form-group">
+					<label for="full-name">Full Name</label>
+					<input type="text" id="full-name" name="full-name" required>
+				</div>
+				<div class="form-group">
+					<label for="position">Position you are applying for</label>
+					<select id="position" name="position" required>
+						<option value="">-- Please select --</option>
+						<option value="farmer">Farmer</option>
+						<option value="manager">Manager</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="phone-number">Phone number</label>
+					<input type="tel" id="phone-number" name="phone-number" required>
+				</div>
+				<div class="form-group">
+					<label for="country">Country</label>
+					<input type="text" id="country" name="country" required>
+				</div>
+				<div class="form-group">
+					<label for="city">City</label>
+					<input type="text" id="city" name="city" required>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" required>
+				</div>
+				<div class="form-group">
+					<label for="confirm-password">Confirm password</label>
+					<input type="password" id="confirm-password" name="confirm-password" required>
+				</div>
+				<div class="form-group">
+					<label>Gender</label>
+					<div class="radio-group">
+
+						<label><input type="radio" name="gender" value="male" required> Male</label>
+						<label><input type="radio" name="gender" value="female" required> Female</label>
+						<label><input type="radio" name="gender" value="other" required> Other</label>
+						<!-- <label><input type="" name="gender" value="prefer-not-to-say" </label> -->
+					</div>
+				</div>
+				<button type="submit" class="btn">Submit</button>
+			</form>
+			<div class="sign-in-link">
+				Already have an account? <a href="sign_in.html">Sign in</a>
+
+			</div>
+		</div>
+	</div>
+	<script>
+		function openPopup() {
+			document.getElementById('popup').style.display = 'flex';
+		}
+
+		function closePopup() {
+			document.getElementById('popup').style.display = 'none';
+		}
+	</script>
+</body>
+
+</html>
